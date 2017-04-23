@@ -9,7 +9,23 @@ namespace nutshellpra
             //RefTransfer();
             //ValueTransfer();
             //ValueAndRefParameters();
-            StringPra();
+            //StringPra();
+            ParametersPra();
+        }
+
+        static void ParametersPra()
+        {
+            ParametersPra parametersPra = new ParametersPra();
+            Console.WriteLine($"Sum: {parametersPra.Sum(1, 2, 3, 4)}"); // Same as parametersPra.Sum(new int[] { 1, 2, 3, 4 });
+
+            Console.WriteLine(parametersPra.Sentence("My ", "name ", "is ", "Yancy ", "Zheng"));
+
+            parametersPra.OptionalParameters("Yancy");
+            parametersPra.OptionalParameters("Karen", 2, false);
+
+            // same as (1, y:2), (y:2, x:1)
+            // (x: 1, 2) error
+            parametersPra.NamedArguments(x: 1, y: 2); 
         }
 
         static void StringPra()
