@@ -10,7 +10,14 @@ namespace nutshellpra
             //ValueTransfer();
             //ValueAndRefParameters();
             //StringPra();
-            ParametersPra();
+            //ParametersPra();
+            ConstructorPra();
+        }
+
+        static void ConstructorPra()
+        {
+            //ConstructorPra constructorPra1 = new ConstructorPra(1);
+            ConstructorPra constructorPra2 = new ConstructorPra(2, 2);
         }
 
         static void ParametersPra()
