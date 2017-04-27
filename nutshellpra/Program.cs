@@ -11,7 +11,17 @@ namespace nutshellpra
             //ValueAndRefParameters();
             //StringPra();
             //ParametersPra();
-            ConstructorPra();
+            //ConstructorPra();
+            ThisReference();
+        }
+
+        static void ThisReference()
+        {
+            ThisReference thisRef = new ThisReference();
+            thisRef.Foo(thisRef);
+
+            Employee employee = new Employee("Tom", 35);
+            employee.PrintEmployeeInfo();
         }
 
         static void ConstructorPra()
